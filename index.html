@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP3 Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player-container">
+    <div class="player">
+      <div class="current-track">
+        <h2 id="track-title">Selecione uma música</h2>
+      </div>
+      <audio id="audio" controls>
+        Your browser does not support the audio element.
+      </audio>
+      <div class="controls">
+        <button id="prev" class="control-button">Anterior</button>
+        <button id="play" class="control-button">Play</button>
+        <button id="next" class="control-button">Próximo</button>
+      </div>
+    </div>
+    <div class="playlist-container">
+      <h3>Playlist</h3>
+      <ul id="playlist">
+        <!-- A lista de músicas será gerada aqui -->
+      </ul>
+      <input type="file" id="file-input" multiple accept=".mp3" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
